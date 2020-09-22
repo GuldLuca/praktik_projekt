@@ -8,11 +8,12 @@ const DB = require("./models/database");
 
 
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname + "/public/")));
+app.set("views", path.join(__dirname + "views/html"))
 
 //Routes
-var checkout = require('./routes/checkout');
-app.use('/checkout', checkout);
+const checkoutRoute = require('./routes/checkout');
+app.use(checkoutRoute);
 
 //DB Models instances
 const User = require("./models/user");
@@ -39,9 +40,6 @@ DB.sync();
 
 const port = process.env.PORT || 4000;
 
-app.listen(port, (error) =>{
-    if(error) {
-        console.log("Error starting the server");
-    }
-    console.log("Server started on port", Number(port));
-})
+app.listen(80, function () {
+    console.log('Listening on port 3000');
+  });

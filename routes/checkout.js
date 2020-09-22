@@ -1,15 +1,28 @@
+"use strict"
+
 var express = require('express');
 var router = express.Router();
 var braintree = require('braintree');
+const { response } = require('express');
 
-router.post('/', function(req, res, next) {
-  var gateway = braintree.connect({
+var gateway = new braintree.BraintreeGateway({
     environment: braintree.Environment.Sandbox,
-    // Use your own credentials from the sandbox Control Panel here
     merchantId: 'yq5kf6k84xwzpbpc',
     publicKey: 'wqh7yt45tn5pm7mc',
     privateKey: 'd14110c78737c97347340770ede91d8d'
-  });
+});
+
+
+router.get("/", function(req, res) {
+
+    gateway.clientToken.generate({}, function(err, response){
+        res.sendFile(__dirname + "/views/index.html")
+    }
+    );
+});
+
+router.post('/', function(req, res, next) {
+
 
   // Use the payment method nonce here
   var nonceFromTheClient = req.body.paymentMethodNonce;
@@ -25,7 +38,7 @@ router.post('/', function(req, res, next) {
   }, function(error, result) {
       if (result) {
           console.log(result);
-        res.send(result);
+          res.sendFile(__dirname + "/views/index.html");
       } else {
         res.status(500).send(error);
       }

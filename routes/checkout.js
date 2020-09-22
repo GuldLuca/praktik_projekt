@@ -24,6 +24,7 @@ router.post('/', function(req, res, next) {
     }
   }, function(error, result) {
       if (result) {
+          console.log(result);
         res.send(result);
       } else {
         res.status(500).send(error);

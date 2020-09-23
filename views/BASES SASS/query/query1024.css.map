@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kBAAkB;AAElB,8BAA8B;AAK9B,+BAA+B",
+"sources": ["../scss/query/query1024.scss"],
+"names": [],
+"file": "query1024.css"
+}

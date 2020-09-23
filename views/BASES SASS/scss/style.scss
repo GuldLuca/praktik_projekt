@@ -1,0 +1,23 @@
+/*Basic wordpress and Theme Info*/
+@import 'wordpress_basic';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+
+$paragraph-font: din-2014, sans-serif;
+$headline-font: din-2014, sans-serif; 
+$font-size: 15px;
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $headline-font;
+}
+
+.p0{
+    padding: 0 !important;
+}
+
+
+@import 'query/query1366';
+@import 'query/query1024';
+@import 'query/query768';
+@import 'query/query480';
+@import 'query/ipad';
+@import 'query/iphone';

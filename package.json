@@ -1,0 +1,31 @@
+{
+  "name": "firestarters-webshop",
+  "version": "1.0.0",
+  "description": "Trying to implement alternative solution to Stripe as payment solution on the firestarters project for internship at Rabotnik",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "braintree": "^3.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "node": "^14.11.0",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuldLuca/praktik_projekt.git"
+  },
+  "author": "Luca Bastholm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuldLuca/praktik_projekt/issues"
+  },
+  "homepage": "https://github.com/GuldLuca/praktik_projekt#readme"
+}

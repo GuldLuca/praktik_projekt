@@ -8,12 +8,15 @@ const DB = require("./models/database");
 
 
 app.use(bodyParser.urlencoded({extended: false}));
+
 app.use(express.static(path.join(__dirname + "/public/")));
 app.set("views", path.join(__dirname + "views/html"))
 
 //Routes
 const checkoutRoute = require('./routes/checkout');
 app.use(checkoutRoute);
+const shopRoute = require("./routes/shop");
+app.use(shopRoute);
 
 //DB Models instances
 const User = require("./models/user");
@@ -36,10 +39,8 @@ Product.hasMany(Tag);
 WishList.belongsTo(User);
 Cart.belongsTo(User);
 
-DB.sync();
+DB.sync({force: true});
 
-const port = process.env.PORT || 4000;
-
-app.listen(80, function () {
-    console.log('Listening on port 3000');
-  });
+const listener = app.listen(process.env.PORT || 8000, function() {
+	console.log('Your app is listening on port ' + listener.address().port);
+});

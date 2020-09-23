@@ -1,0 +1,1061 @@
+/*iPhone Styling*/
+
+
+//iPhone X in landscape
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+
+//iPhone X in portrait
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { /* STYLES GO HERE */ }
+
+
+//iPhone 6, 7, & 8 in landscape
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+//iPhone 6, 7, & 8 in portrait
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+    .home-page{
+
+        h1, h2{
+            font-size: 14px;
+        }
+
+        span.manchet{
+            font-size: 5px;
+        }
+
+        p{
+            font-size: 5px;
+        }
+
+        .section-header{
+
+            h1{
+                float: left;
+                padding-top: 35px;
+                padding-left: 55px;
+                margin-top: 0;
+                padding-bottom: 0px;
+            }
+    
+            img.logo{
+                width: 30px;
+                padding-top: 8px;
+                padding-left: 1px;
+            }
+
+            .manchet{
+                padding-bottom: 12px;
+
+                p{
+                    font-size: 7px;
+                    max-width: 220px;
+                    
+                }
+            }
+
+            .button-pair{
+
+                padding-left: 50px;
+
+                button{
+                    max-width: 70px;
+                    font-size: 7px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    padding-left: 2px;
+                    padding-right: 2px;
+                    border-width: 1px;
+                    float: left;
+                    
+                }
+            }
+
+            .background-vector{
+                margin-top: -10px;
+            }
+        }
+
+        .menu{
+            font-size: 5px;
+            padding-bottom: 0;            
+            padding-left: 40px;
+            padding-top: 0px;
+
+
+            li{
+
+
+                a{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 10px;
+
+                }
+                
+                .home{
+                    border-bottom-width: 1px;
+                    padding-bottom: 3px;
+                }
+            
+            }
+    
+        }
+
+        .section-1{
+
+            h2{
+                padding-left: 40px;
+            }
+
+            .manchet{
+                padding-left: 40px;
+                max-width: 210px;
+            }
+
+            .p-manchet{
+                padding-top: 50px;
+                padding-bottom: 10px;
+                max-width: 200px;
+                padding-left: 40px;
+                img{
+                    height: auto;
+                    max-width: 30px;
+                }
+                
+            }
+
+            .p-bottom{
+                padding-bottom: 90px;
+                max-width: 200px;
+                padding-left: 40px;
+                img{
+                    height: auto;
+                    max-width: 30px;
+                }
+            }
+
+            .our-work-btn{
+                font-size: 3px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                text-align: center;
+                margin-bottom: 0;
+                border-radius: 2px;
+            }
+
+            .about-us-btn{
+                font-size: 3px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                text-align: center;
+                border-width: 0.5px;
+                border-radius: 2px;
+
+            
+            }
+        }
+
+        .section-2{
+            background-size: contain;
+            background-position: right bottom;
+            margin-top: 0;
+
+            h2{
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .manchet{
+                padding-bottom: 15px;
+            }
+
+            .tekst-element{
+                height: auto;
+            }
+
+            .column-1{
+                padding-left: 40px;
+            }
+
+            .p-column-2{
+                padding: 0;
+                max-width: 90px;
+            }
+
+            .underoverskrift{
+                float: left;
+            }
+
+            .brødtekst{
+                float: left;
+            }
+        }
+
+        .section-3{
+
+            .contact{
+                max-width: 100px;
+                margin-left: 40px;
+                margin-top: 30px;
+                max-height: 100px;
+                padding: 10px;
+
+                margin-bottom: 30px;
+                p{
+                    margin: 0;
+                }
+            }
+
+            .fund{
+                max-width: 100px;
+                margin-left: 20px;
+                margin-top: 30px;
+                border-width: 1px;
+                max-height: 100px;
+                padding: 10px;
+                margin-bottom: 30px;
+
+                button{
+                    margin-top: 0;
+                    font-size: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border-radius: 2px;
+                }
+            }
+
+
+        }
+
+        .section-footer{
+            img{
+                max-width: 40px;
+                margin-top: 0;
+            }
+
+
+            hr{
+                margin-top: 15px;
+            }
+        }
+
+    
+    }
+}
+
+
+//iPhone 6, 7, & 8 Plus in landscape
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+//iPhone 6, 7, & 8 Plus in portrait
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) { 
+    
+    .home-page{
+
+    h1, h2{
+        font-size: 14px;
+    }
+
+    span.manchet{
+        font-size: 5px;
+    }
+
+    p{
+        font-size: 5px;
+    }
+
+    .section-header{
+
+        h1{
+            float: left;
+            padding-top: 35px;
+            padding-left: 50px;
+            margin-top: 0;
+            padding-bottom: 0px;
+        }
+
+        img.logo{
+            width: 30px;
+            padding-top: 8px;
+            padding-left: 1px;
+        }
+
+        .manchet{
+            padding-bottom: 12px;
+
+            p{
+                font-size: 7px;
+                max-width: 220px;
+                
+            }
+        }
+
+        .button-pair{
+
+            padding-left: 50px;
+
+            button{
+                max-width: 70px;
+                font-size: 7px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                padding-left: 2px;
+                padding-right: 2px;
+                border-width: 1px;
+                float: left;
+                
+            }
+        }
+
+        .background-vector{
+            margin-top: -10px;
+        }
+    }
+
+    .menu{
+        font-size: 5px;
+        padding-bottom: 0;            
+        padding-left: 40px;
+        padding-top: 0px;
+
+
+        li{
+
+
+            a{
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 10px;
+
+            }
+            
+            .home{
+                border-bottom-width: 1px;
+                padding-bottom: 3px;
+            }
+        
+        }
+
+    }
+
+    .section-1{
+
+        h2{
+            padding-left: 40px;
+        }
+
+        .manchet{
+            padding-left: 40px;
+            max-width: 210px;
+        }
+
+        .p-manchet{
+            padding-top: 50px;
+            padding-bottom: 10px;
+            max-width: 200px;
+            padding-left: 40px;
+            img{
+                height: auto;
+                max-width: 30px;
+            }
+            
+        }
+
+        .p-bottom{
+            padding-bottom: 90px;
+            max-width: 200px;
+            padding-left: 40px;
+            img{
+                height: auto;
+                max-width: 30px;
+            }
+        }
+
+        .our-work-btn{
+            font-size: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            text-align: center;
+            margin-bottom: 0;
+            border-radius: 2px;
+        }
+
+        .about-us-btn{
+            font-size: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            text-align: center;
+            border-width: 0.5px;
+            border-radius: 2px;
+
+        
+        }
+    }
+
+    .section-2{
+        background-size: contain;
+        background-position: right bottom;
+        margin-top: 0;
+
+        h2{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .manchet{
+            padding-bottom: 15px;
+        }
+
+        .tekst-element{
+            height: auto;
+        }
+
+        .column-1{
+            padding-left: 40px;
+        }
+
+        .p-column-2{
+            padding: 0;
+            max-width: 90px;
+        }
+
+        .underoverskrift{
+            float: left;
+        }
+
+        .brødtekst{
+            float: left;
+        }
+    }
+
+    .section-3{
+
+        .contact{
+            max-width: 100px;
+            margin-left: 40px;
+            margin-top: 30px;
+            max-height: 100px;
+            padding: 10px;
+
+            margin-bottom: 30px;
+            p{
+                margin: 0;
+            }
+        }
+
+        .fund{
+            max-width: 100px;
+            margin-left: 20px;
+            margin-top: 30px;
+            border-width: 1px;
+            max-height: 100px;
+            padding: 10px;
+            margin-bottom: 30px;
+
+            button{
+                margin-top: 0;
+                font-size: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 2px;
+            }
+        }
+
+
+    }
+
+    .section-footer{
+        img{
+            max-width: 40px;
+            margin-top: 0;
+        }
+
+
+        hr{
+            margin-top: 15px;
+        }
+    }
+
+
+}
+
+}
+
+
+//iPhone 5 & 5S in landscape
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+
+    .home-page{
+
+        h1, h2{
+            font-size: 14px;
+        }
+
+        span.manchet{
+            font-size: 5px;
+        }
+
+        p{
+            font-size: 5px;
+        }
+
+        .section-header{
+
+            h1{
+                padding-top: 0;
+                padding-left: 0;
+                margin-top: 50px;
+                padding-bottom: 0px;
+                margin-left: -40px;
+            }
+    
+            img.logo{
+                width: 30px;
+                padding-top: 8px;
+                padding-left: 1px;
+            }
+
+            .manchet{
+                padding-bottom: 12px;
+
+                p{
+                    font-size: 7px;
+                    max-width: 220px;
+                    
+                }
+            }
+
+            .button-pair{
+
+                padding-left: 150px;
+
+                button{
+                    max-width: 70px;
+                    font-size: 7px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    padding-left: 2px;
+                    padding-right: 2px;
+                    border-width: 1px;
+                    float: left;
+                    
+                }
+            }
+
+            .background-vector{
+                margin-top: -60px;
+            }
+        }
+
+        .menu{
+            font-size: 5px;
+            padding-bottom: 0;            
+            padding-left: 110px;
+            padding-top: 0px;
+            float: left;
+
+
+            li{
+
+
+                a{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 10px;
+
+                }
+                
+                .home{
+                    border-bottom-width: 1px;
+                    padding-bottom: 3px;
+                }
+            
+            }
+    
+        }
+
+        .section-1{
+
+            h2{
+                padding-left: 120px;
+            }
+
+            .manchet{
+                padding-left: 120px;
+                max-width: 400px;
+            }
+
+            .p-manchet{
+                padding-top: 50px;
+                padding-bottom: 10px;
+                max-width: 350px;
+                padding-left: 120px;
+                img{
+                    height: auto;
+                    max-width: 60px;
+                }
+                
+            }
+
+            .p-bottom{
+                padding-bottom: 90px;
+                max-width: 350px;
+                padding-left: 120px;
+                img{
+                    height: auto;
+                    max-width: 60px;
+                }
+            }
+
+            .our-work-btn{
+                font-size: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                text-align: center;
+                margin-bottom: 0;
+                border-radius: 2px;
+            }
+
+            .about-us-btn{
+                font-size: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                text-align: center;
+                border-width: 0.5px;
+                border-radius: 2px;
+
+            
+            }
+        }
+
+        .section-2{
+            background-size: contain;
+            background-position: right bottom;
+            margin-top: 0;
+
+            h2{
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .manchet{
+                padding-bottom: 15px;
+            }
+
+            .tekst-element{
+                height: auto;
+            }
+
+            .column-1{
+                padding-left: 120px;
+            }
+
+            .p-column-2{
+                padding: 0;
+                max-width: 150px;
+            }
+
+            .underoverskrift{
+                float: left;
+            }
+
+            .brødtekst{
+                float: left;
+            }
+        }
+
+        .section-3{
+
+            .contact{
+                max-width: 130px;
+                margin-top: 30px;
+                max-height: 100px;
+                padding: 10px;
+
+                margin-left: 120px;
+                margin-bottom: 30px;
+                p{
+                    margin: 0;
+                }
+            }
+
+            .fund{
+                max-width: 130px;
+                margin-left: 20px;
+                margin-top: 30px;
+                border-width: 1px;
+                max-height: 100px;
+                padding: 10px;
+                margin-bottom: 30px;
+
+                button{
+                    margin-top: 0;
+                    font-size: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border-radius: 2px;
+                }
+            }
+
+
+        }
+
+        .section-footer{
+            img{
+                max-width: 50px;
+                margin-top: 0;
+            }
+
+
+            hr{
+                margin-top: 15px;
+            }
+        }
+
+    
+    }
+}
+
+//iPhone 5 & 5S in portrait
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+    .home-page{
+
+        h1, h2{
+            font-size: 14px;
+        }
+
+        span.manchet{
+            font-size: 5px;
+        }
+
+        p{
+            font-size: 5px;
+        }
+
+        .section-header{
+
+            h1{
+                float: left;
+                padding-top: 35px;
+                padding-left: 75px;
+                margin-top: 0;
+                padding-bottom: 0px;
+            }
+    
+            img.logo{
+                width: 30px;
+                padding-top: 8px;
+                padding-left: 1px;
+            }
+
+            .manchet{
+                padding-bottom: 12px;
+
+                p{
+                    font-size: 7px;
+                    max-width: 220px;
+                    
+                }
+            }
+
+            .button-pair{
+
+                padding-left: 50px;
+
+                button{
+                    max-width: 70px;
+                    font-size: 7px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    padding-left: 2px;
+                    padding-right: 2px;
+                    border-width: 1px;
+                    float: left;
+                    
+                }
+            }
+
+            .background-vector{
+                margin-top: -10px;
+            }
+        }
+
+        .menu{
+            font-size: 5px;
+            padding-bottom: 0;            
+            padding-left: 40px;
+            padding-top: 0px;
+
+
+            li{
+
+
+                a{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 10px;
+
+                }
+                
+                .home{
+                    border-bottom-width: 1px;
+                    padding-bottom: 3px;
+                }
+            
+            }
+    
+        }
+
+        .section-1{
+
+            h2{
+                padding-left: 40px;
+            }
+
+            .manchet{
+                padding-left: 40px;
+                max-width: 210px;
+            }
+
+            .p-manchet{
+                padding-top: 50px;
+                padding-bottom: 10px;
+                max-width: 200px;
+                padding-left: 40px;
+                img{
+                    height: auto;
+                    max-width: 30px;
+                }
+                
+            }
+
+            .p-bottom{
+                padding-bottom: 90px;
+                max-width: 200px;
+                padding-left: 40px;
+                img{
+                    height: auto;
+                    max-width: 30px;
+                }
+            }
+
+            .our-work-btn{
+                font-size: 3px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                text-align: center;
+                margin-bottom: 0;
+                border-radius: 2px;
+            }
+
+            .about-us-btn{
+                font-size: 3px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                text-align: center;
+                border-width: 0.5px;
+                border-radius: 2px;
+
+            
+            }
+        }
+
+        .section-2{
+            background-size: contain;
+            background-position: right bottom;
+            margin-top: 0;
+
+            h2{
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .manchet{
+                padding-bottom: 15px;
+            }
+
+            .tekst-element{
+                height: auto;
+            }
+
+            .column-1{
+                padding-left: 40px;
+            }
+
+            .p-column-2{
+                padding: 0;
+                max-width: 90px;
+            }
+
+            .underoverskrift{
+                float: left;
+            }
+
+            .brødtekst{
+                float: left;
+            }
+        }
+
+        .section-3{
+
+            .contact{
+                max-width: 100px;
+                margin-left: 40px;
+                margin-top: 30px;
+                max-height: 100px;
+                padding: 10px;
+
+                margin-bottom: 30px;
+                p{
+                    margin: 0;
+                }
+            }
+
+            .fund{
+                max-width: 100px;
+                margin-left: 20px;
+                margin-top: 30px;
+                border-width: 1px;
+                max-height: 100px;
+                padding: 10px;
+                margin-bottom: 30px;
+
+                button{
+                    margin-top: 0;
+                    font-size: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border-radius: 2px;
+                }
+            }
+
+
+        }
+
+        .section-footer{
+            img{
+                max-width: 40px;
+                margin-top: 0;
+            }
+
+
+            hr{
+                margin-top: 15px;
+            }
+        }
+
+    
+    }
+}
+
+
+//iPhone 2G-4S in landscape
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+//iPhone 2G-4S in portrait
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : portrait) { /* STYLES GO HERE */ }
+
+
+/*iPhone 5 Resolution
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 568px (CSS Pixels)
+
+Screen Width = 640px (Actual Pixels)
+Screen Height = 1136px (Actual Pixels)
+
+Device-pixel-ratio: 2*/
+
+
+
+/*iPhone 4/4S Resolution
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 480px (CSS Pixels)
+
+Screen Width = 640px (Actual Pixels)
+Screen Height = 960px (Actual Pixels)
+
+Device-pixel-ratio: 2*/
+
+
+
+
+/*iPhone 2G/3G/3GS Resolution
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 480px (CSS Pixels)
+
+Screen Width = 320px (Actual Pixels)
+Screen Height = 480px (Actual Pixels)
+
+Device-pixel-ratio: 1*/
+
+
+
+/*iPhone X Resolution
+
+Screen Width = 375px (CSS Pixels)
+Screen Height = 812px (CSS Pixels)
+
+Screen Width = 1125 (Actual Pixels)
+Screen Height = 2436 (Actual Pixels)
+
+Device-pixel-ratio: 3*/

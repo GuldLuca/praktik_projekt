@@ -17,6 +17,10 @@ const checkoutRoute = require('./routes/checkout');
 app.use(checkoutRoute);
 const shopRoute = require("./routes/shop");
 app.use(shopRoute);
+const categoryRoute = require("./routes/category");
+app.use(categoryRoute);
+const adminRoute = require("./routes/admin");
+app.use(adminRoute);
 
 //DB Models instances
 const User = require("./models/user");

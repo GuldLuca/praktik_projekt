@@ -7,26 +7,21 @@
 	<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-    <title>Products</title>
+    <title>Category</title>
 </head>
-<body class="products-page">
+<body class="category-page">
     <div class="section-1">
         <div class="container-fluid dark">
-            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-            <i class="fa fa-heart" aria-hidden="true"></i>
             <div class="container">
-                <div class="search-bar">
-                    <input type="text" placeholder="Search">
-                </div>
-                <h1>Products</h1>
+                <h1>Categories</h1>
                 <hr>
-                <button>Sort</button>
-                <button class="add-product-btn">Add Product</button>
-                <div class="products">
-                    <img src="/views/img/products/coming-soon.jpg" alt="coming-soon">
-                    <p>Title</p>
-                    <p>Price</p>
-                    <a href="/views/admin/edit-products.html"><button>Edit</button></a>
+
+                <h2>Add Category</h2>
+                <div class="add-form">
+                    <form action="/api/category/add" method="POST">
+                        <input type="text" value="title" placeholder="Title">
+                        <button type="submit">Add</button>
+                    </form>
                 </div>
             </div>
         </div>

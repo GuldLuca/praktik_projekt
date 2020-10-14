@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const DB = require("../models/database");
 const Category = require("../models/category");
 
-router.get("/api/category", async (req, res) =>{
+router.get("/api/admin/category", async (req, res) =>{
 
     const categories = await Category.findAll();
 
@@ -15,19 +14,15 @@ router.get("/api/category", async (req, res) =>{
     }
 })
 
-router.post("/api/category/add", (req, res) =>{
+router.post("/api/admin/category/add", (req, res) =>{
     
-    const sql = "INSERT into categories (title) VALUES (?)"
-
-    const value = req.body.category;
-
-    DB.query(sql, value, (error, data, fields) =>{
-        if(error) throw error;
-        res.json({
-            status: 200,
-            message: "New category added"
-        })
+    Category.create({
+        title: req.body.title,
+        imageUrl: req.body.imageUrl
+    }).then(category =>{
+        return res.send(category);
     })
+
 })
 
 router.get("/admin/category", (req, res) =>{

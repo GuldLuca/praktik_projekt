@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const DB = require("../models/database");
 const Product = require("../models/product");
 
 //Get all products from db

@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
         $.ajax({
-            url: "/api/products",
+            url: "/api/admin/products",
             type: "GET",
             dataType: "json"
         })
@@ -24,7 +24,7 @@ $(document).ready(() => {
         })
 
         $.ajax({
-            url: "/api/products/add",
+            url: "/api/admin/products/add",
             type: "POST",
             dataType: "json"
         })
@@ -33,7 +33,7 @@ $(document).ready(() => {
         })
 
         $.ajax({
-            url: "/api/category",
+            url: "/api/admin/category",
             type: "GET",
             dataType: "json"
         })
@@ -43,26 +43,56 @@ $(document).ready(() => {
             let categories = data.response;
             let categoriesLength = categories.length;
 
-            $(".categories")[0].innerHTML = "";
+            $(".categoryList").innerHTML = "";
 
-            for(let i = 0; i < productsLength; i++) {
+            for(let i = 0; i < categoriesLength; i++) {
                 const pTitle = document.createElement("p");
 
-                pTitle.innerHTML = products[i].title;
+                pTitle.innerHTML = categories[i].title;
 
-                $(".categories").append(pTitle);
+                $(".categoryList").append(pTitle);
             }
 
         })
 
-        $.ajax({
-            url: "/api/category/add",
-            type: "POST",
-            dataType: "json"
-        })
+        
+        var categoryTitle = document.getElementsByClassName("categoryTitle");
+        var categoryImageUrl = document.getElementsByClassName("categoryImageUrl");
 
-        .done(data =>{
-            
+        $(".thisForm").submit(function(event) {
+            event.preventDefault();
+            addCategory();
+        });
 
-        })
+
+
+        function addCategory(){
+
+            var formData = {
+                title: $(".categoryTitle").val(),
+                imageUrl: $(".categoryImageUrl").val()
+            }
+
+            $.ajax({
+                url: "/api/admin/category/add",
+                type: "POST",
+                data: formData,
+                dataType: "json",
+                success: function(category) {
+                    $(".postResult").html("<p>New category [" + category.title + "] added!</p>")
+                },
+                error: function(e) {
+                    alert("Error. Try something else.");
+                    console.log("ERROR: ", e);
+                }
+            });
+
+            resetForm();
+        }
+
+        function resetForm(){
+            $(categoryTitle).val("");
+            $(categoryImageUrl).val("");
+        }
+       
 })

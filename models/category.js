@@ -9,7 +9,8 @@ const Category = sequelize.define('category', {
     allowNull: false,
     primaryKey: true
   },
-  title: Sequelize.STRING
+  title: Sequelize.STRING,
+  imageUrl: Sequelize.STRING
 });
 
-module.exports = Category;
+module.exports = Category; 

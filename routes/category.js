@@ -14,14 +14,22 @@ router.get("/api/admin/category", async (req, res) =>{
     }
 })
 
-router.post("/api/admin/category/add", (req, res) =>{
+router.post("/api/admin/category/add", async (req, res) =>{
     
-    Category.create({
-        title: req.body.title,
-        imageUrl: req.body.imageUrl
-    }).then(category =>{
-        return res.send(category);
-    })
+   /* const title = req.body.title;
+    const category = await Category.findAll({where: {"title": title}});
+
+    if(category.length > 0){
+        return res.status(500).send({errorMessage: "Category already exists"});
+    }
+    else{
+        Category.create({
+            title: title,
+            imageUrl: req.body.imageUrl
+        }).then(newCategory =>{
+            return res.send(newCategory);
+        })
+    }*/
 
 })
 

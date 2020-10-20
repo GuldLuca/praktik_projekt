@@ -10,7 +10,8 @@ const Brand = sequelize.define('brand', {
     primaryKey: true
   },
   title: Sequelize.STRING,
-  description: Sequelize.STRING
+  description: Sequelize.STRING,
+  imageURL: Sequelize.STRING
 });
 
 module.exports = Brand;

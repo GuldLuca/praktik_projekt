@@ -14,14 +14,25 @@ router.get("/api/admin/brand", async (req, res) =>{
     }
 })
 
-router.post("/api/admin/brand/add", (req, res) =>{
+router.post("/api/admin/brand/add", async (req, res) =>{
     
-    Brand.create({
-        title: req.body.title,
-        imageUrl: req.body.imageUrl
-    }).then(brand =>{
-        return res.send(brand);
-    })
+    const title = req.body.title;
+    const brand = await Brand.findAll({where: {"title": title}});
+
+    if(brand.length > 0){
+        console.log(brand);
+        return res.status(500).send({errorMessage: "Brand already exists"});
+    }
+    else{
+        Brand.create({
+            title: title,
+            description: req.body.description,
+            imageUrl: req.body.imageUrl
+        }).then(newBrand =>{
+            console.log(newBrand.title);
+            return res.send(newBrand);
+        })
+    }
 
 })
 

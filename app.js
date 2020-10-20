@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static(path.join(__dirname + "/public/")));
-app.set("views", path.join(__dirname + "views/html"))
+app.set("views", path.join(__dirname + "views/html"));
 
 //Routes
 const checkoutRoute = require('./routes/checkout');
@@ -21,6 +21,8 @@ const categoryRoute = require("./routes/category");
 app.use(categoryRoute);
 const adminRoute = require("./routes/product");
 app.use(adminRoute);
+const brandRoute = require("./routes/brand");
+app.use(brandRoute);
 
 //DB Models instances
 const User = require("./models/user");
@@ -44,7 +46,7 @@ WishList.belongsTo(User);
 Cart.belongsTo(User);
 
 DB.sync();
-const PORT = process.env.PORT || 3000
-const server = app.listen(PORT, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
     console.log('[server] Started server');
 });

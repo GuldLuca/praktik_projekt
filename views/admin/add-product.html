@@ -16,12 +16,30 @@
                 <h1>Add Product</h1>
                 <hr>
                 <div class="add-form">
-                    <form action="/api/products/add" method="POST">
-                        <input type="text" value="title" placeholder="Title">
-                        <input type="text" value="price" placeholder="Price">
-                        <input type="text" value="imageUrl" placeholder="Image URL">
-                        <input type="text" value="description" placeholder="Description">
-                        <input type="number" value="quantity" placeholder="Quantity">
+                    <form action="/api/products/add" method="POST" class="thisForm">
+                        <input type="text" value="title" name="title" placeholder="Title" class="productTitle">
+                        <input type="text" value="price" name="price" placeholder="Price" class="productPrice">
+                        <input type="text" value="imageUrl" name="imageUrl" placeholder="Image URL" class="productImageUrl">
+                        <input type="text" value="description" name="description" placeholder="Description" class="productDescription">
+                        <input type="number" value="quantity" name="quantity" placeholder="Quantity" class="productQuantity">
+                        <select name="brand" class="productBrand">
+
+                        </select>
+                        <select name="category" class="productCategory">
+
+                        </select>
+                        <select name="color" name="productColor">
+
+                        </select>
+                        <select name="fit" class="productFit">
+
+                        </select>
+                        <select name="size" class="productSize">
+
+                        </select>
+                        <select name="tag" class="productTag">
+
+                        </select>
                         <button type="submit">Add</button>
                     </form>
                 </div>
@@ -30,6 +48,6 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/admin.js"></script>
+    <script src="/js/product.js"></script>
 </body>
 </html>

@@ -22,8 +22,9 @@
                 <h2>Add Brand</h2>
                 <div class="add-form">
                     <form action="/api/admin/brand/add" method="POST" class="thisForm">
-                        <input type="text" name ="title" value="title" placeholder="Title" class="categoryTitle">
-                        <input type="text" name="imageUrl" value="imageUrl" placeholder="Image URL" class="categoryImageUrl">
+                        <input type="text" name ="title" value="title" placeholder="Title" class="brandTitle">
+                        <input type="text" name="description" value="description" placeholder="Description" class="brandDescription">
+                        <input type="text" name="imageUrl" value="imageUrl" placeholder="Image URL" class="brandImageUrl">
                         <button type="submit">Add</button>
                     </form>
                 </div>
@@ -35,5 +36,5 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/admin.js"></script></body>
+    <script type="text/javascript" src="/js/brand.js"></script></body>
 </html>

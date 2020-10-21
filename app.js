@@ -40,7 +40,7 @@ User.hasOne(Cart);
 WishList.hasMany(Product);
 Cart.hasMany(CartItem);
 Product.hasOne(Brand);
-Product.hasMany(Category);
+Product.hasOne(Category);
 Product.hasMany(Tag);
 WishList.belongsTo(User);
 Cart.belongsTo(User);

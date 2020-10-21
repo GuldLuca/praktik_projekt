@@ -104,7 +104,7 @@ router.get("/api/admin/products/add/fits", async (req, res) =>{
 
 
 //Add product to db
-router.post("/api/admin/products/add", (req, res) => {
+router.post("/api/admin/products/add", async (req, res) => {
 
     let values = [
         title = req.body.title, 
@@ -117,17 +117,39 @@ router.post("/api/admin/products/add", (req, res) => {
         tag = req.body.tag,
         fit = req.body.fit,
         size = req.body.size,
-        color = req.body.color,
+        color = req.body.color
     ];
 
-    Product.create({
+    console.log("all values ", values);
+    console.log("values.brand ", values.brand);
+    console.log("values.category", values.category);
+
+    const productCategory = await Category.findOne({where: {title: values.category}});
+    const productTag = await Tag.findOne({where: {title: values.tag}});
+    const productBrand = await Brand.findOne({where: {title: values.brand}});
+    const productFit = await Fit.findOne({where: {title: values.fit}});
+    const productSize = await Size.findOne({where: {title: values.size}});
+    const productColor = await Color.findOne({where: {title: values.color}});
+
+
+
+    const product = Product.create({
         title: values.title,
-        imageUrl: values.imageUrl
+        imageUrl: values.imageUrl,
+        quantity: values.quantity,
+        description: values.description,
+        price: values.price
     }).then(product =>{
         return res.send(product);
-    })
+    });
 
-    
+    product.setCategory(productCategory);
+    product.setTag(productTag);
+    product.setBrand(productBrand);
+    product.setFit(productFit);
+    product.setSize(productSize);
+    product.setColor(productColor);
+
 });
 
 //Get products html file

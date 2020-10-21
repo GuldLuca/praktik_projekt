@@ -32,14 +32,14 @@ $(document).ready(() => {
         let brands = data.response;
         let brandsLength = brands.length;
 
-        $(".productBrand")[0].innerHTML = "";
+        $("#productBrand")[0].innerHTML = "";
 
         for(let i = 0; i < brandsLength; i++) {
             const option = document.createElement("option");
 
             option.innerHTML = brands[i].title;
-
-            $(".productBrand").append(option);
+            $("#productBrand").append(option);
+            console.log(option.value);
         };
 
     })
@@ -145,17 +145,11 @@ $(document).ready(() => {
             option.innerHTML = fits[i].title;
 
             $(".productFit").append(option);
+
+            $(".productFit").val("productFit");
         };
 
     })
-
-
-    var productBrand = document.getElementsByClassName("productBrand");
-    var productCategory = document.getElementsByClassName("productCategory");
-    var productColor = document.getElementsByClassName("productColor");
-    var productFit = document.getElementsByClassName("productFit");
-    var productSize = document.getElementsByClassName("productSize");
-    var productTag = document.getElementsByClassName("productTag");
 
     $(".thisForm").submit(function(event) {
         event.preventDefault();
@@ -164,9 +158,19 @@ $(document).ready(() => {
 
     function addProduct(){
 
+        var productBrand = document.getElementById("productBrand");
+        var productCategory = document.getElementsByClassName("productCategory");
+        var productColor = document.getElementsByClassName("productColor");
+        var productFit = document.getElementsByClassName("productFit");
+        var productSize = document.getElementsByClassName("productSize");
+        var productTag = document.getElementsByClassName("productTag");
+    
+        var selectedBrand = productBrand.options[productBrand.selectedIndex].text;
+        console.log(selectedBrand);
+
         var formData = {
             title: $(".productTitle").val(),
-            brand: $(".productBrand").val(),
+            brand: selectedBrand,
             description: $(".productDescription").val(),
             price: $(".productPrice").val(),
             tag: $(".productTag").val(),
@@ -179,12 +183,14 @@ $(document).ready(() => {
         }
 
         $.ajax({
-            url: "/api/admin/brand/add",
+            url: "/api/admin/products/add",
             type: "POST",
             data: formData,
             dataType: "json",
             success: 
                 function(newProduct) {
+                    console.log("FORMDATA.BRAND ", formData.brand);
+                    console.log("SELECTEDBRAND ", selectedBrand);
                     $(".postResult").html("<p>New product [" + newProduct.title + "] added!</p>")
                 },
             error: 

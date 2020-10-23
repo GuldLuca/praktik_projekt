@@ -20,7 +20,6 @@ router.post("/api/admin/brand/add", async (req, res) =>{
     const brand = await Brand.findAll({where: {"title": title}});
 
     if(brand.length > 0){
-        console.log(brand);
         return res.status(500).send({errorMessage: "Brand already exists"});
     }
     else{
@@ -29,7 +28,6 @@ router.post("/api/admin/brand/add", async (req, res) =>{
             description: req.body.description,
             imageUrl: req.body.imageUrl
         }).then(newBrand =>{
-            console.log(newBrand.title);
             return res.send(newBrand);
         })
     }

@@ -17,31 +17,32 @@
                 <hr>
                 <div class="add-form">
                     <form action="/api/products/add" method="POST" class="thisForm">
-                        <input type="text" value="title" name="title" placeholder="Title" class="productTitle">
-                        <input type="text" value="price" name="price" placeholder="Price" class="productPrice">
-                        <input type="text" value="imageUrl" name="imageUrl" placeholder="Image URL" class="productImageUrl">
-                        <input type="text" value="description" name="description" placeholder="Description" class="productDescription">
-                        <input type="number" value="quantity" name="quantity" placeholder="Quantity" class="productQuantity">
+                        <input type="text" value="title" name="title" placeholder="Title" id="productTitle">
+                        <input type="text" value="price" name="price" placeholder="Price" id="productPrice">
+                        <input type="text" value="imageUrl" name="imageUrl" placeholder="Image URL" id="productImageUrl">
+                        <input type="text" value="description" name="description" placeholder="Description" id="productDescription">
+                        <input type="number" value="quantity" name="quantity" placeholder="Quantity" id="productQuantity">
+                        
                         <select name="brand" id="productBrand">
                             <option value="none">Choose</option>
                         </select>
-                        <select name="category" class="productCategory">
+                        <select name="category" id="productCategory">
                             <option value="none">Choose</option>
 
                         </select>
-                        <select name="color" name="productColor">
+                        <select name="color" id="productColor">
                             <option value="none">Choose</option>
 
                         </select>
-                        <select name="fit" class="productFit">
+                        <select name="fit" id="productFit">
                             <option value="none">Choose</option>
 
                         </select>
-                        <select name="size" class="productSize">
+                        <select name="size" id="productSize">
                             <option value="none">Choose</option>
 
                         </select>
-                        <select name="tag" class="productTag">
+                        <select name="tag" id="productTag">
                             <option value="none">Choose</option>
 
                         </select>

@@ -14,8 +14,6 @@ router.get("/api/admin/products", async (req, res) => {
 
     const products = await Product.findAll();
 
-    console.log("products ", products);
-
     if(products.length > 0){
         return res.send({ response: products });
     } 
@@ -37,8 +35,7 @@ router.get("/api/admin/products/add/brands", async (req, res) =>{
     }
 });
 
-//Get all brands from DB
-
+//Get all sizes from DB
 router.get("/api/admin/products/add/sizes", async (req, res) =>{
     const sizes = await Size.findAll();
 
@@ -50,8 +47,7 @@ router.get("/api/admin/products/add/sizes", async (req, res) =>{
     }
 });
 
-//Get all brands from DB
-
+//Get all tags from DB
 router.get("/api/admin/products/add/tags", async (req, res) =>{
     const tags = await Tag.findAll();
 
@@ -63,8 +59,7 @@ router.get("/api/admin/products/add/tags", async (req, res) =>{
     }
 });
 
-//Get all brands from DB
-
+//Get all categories from DB
 router.get("/api/admin/products/add/categories", async (req, res) =>{
     const categories = await Category.findAll();
 
@@ -76,8 +71,7 @@ router.get("/api/admin/products/add/categories", async (req, res) =>{
     }
 });
 
-//Get all brands from DB
-
+//Get all colors from DB
 router.get("/api/admin/products/add/colors", async (req, res) =>{
     const colors = await Color.findAll();
 
@@ -85,12 +79,11 @@ router.get("/api/admin/products/add/colors", async (req, res) =>{
         return res.send({response: colors});
     }
     else{
-        return res.status(400).send({response: "No brands found"});
+        return res.status(400).send({response: "No colors found"});
     }
 });
 
-//Get all brands from DB
-
+//Get all fits from DB
 router.get("/api/admin/products/add/fits", async (req, res) =>{
     const fits = await Fit.findAll();
 
@@ -103,53 +96,49 @@ router.get("/api/admin/products/add/fits", async (req, res) =>{
 });
 
 
-//Add product to db
+//Add product to DB
 router.post("/api/admin/products/add", async (req, res) => {
+    
+    const title = req.body.title;
+    const price = req.body.price;
+    const imageUrl = req.body.imageUrl;
+    const description = req.body.description;
+    const quantity = req.body.quantity;
+    const brand = req.body.brand;
+    const category = req.body.category;
+    const tag = req.body.tag;
+    const fit = req.body.fit;
+    const size = req.body.size;
+    const color = req.body.color;
 
-    let values = [
-        title = req.body.title, 
-        price = req.body.price,
-        imageUrl = req.body.imageUrl,
-        description = req.body.description,
-        quantity = req.body.quantity,
-        brand = req.body.brand,
-        category = req.body.category,
-        tag = req.body.tag,
-        fit = req.body.fit,
-        size = req.body.size,
-        color = req.body.color
-    ];
+    const productCategory = await Category.findOne({where: {"title": category}});
+    const productTag = await Tag.findOne({where: {"title": tag}});
+    const productBrand = await Brand.findOne({where: {"title": brand}});
+    const productFit = await Fit.findOne({where: {"title": fit}});
+    const productSize = await Size.findOne({where: {"title": size}});
+    const productColor = await Color.findOne({where: {"title": color}});
 
-    console.log("all values ", values);
-    console.log("values.brand ", values.brand);
-    console.log("values.category", values.category);
 
-    const productCategory = await Category.findOne({where: {title: values.category}});
-    const productTag = await Tag.findOne({where: {title: values.tag}});
-    const productBrand = await Brand.findOne({where: {title: values.brand}});
-    const productFit = await Fit.findOne({where: {title: values.fit}});
-    const productSize = await Size.findOne({where: {title: values.size}});
-    const productColor = await Color.findOne({where: {title: values.color}});
-
+   console.log(productCategory.id);
 
 
     const product = Product.create({
-        title: values.title,
-        imageUrl: values.imageUrl,
-        quantity: values.quantity,
-        description: values.description,
-        price: values.price
-    }).then(product =>{
+        title: title,
+        price: price,
+        imageUrl: imageUrl,
+        description: description,
+        quantity: quantity
+    }).then( async product =>{
+        console.log(product);
+        await product.setCategory(productCategory);
+        await product.setTag(productTag);
+        await product.setBrand(productBrand);
+        await product.setFit(productFit);
+        await product.setSize(productSize);
+        await product.setColor(productColor);
+        console.log("PRODUCT AFTER SET METHODS ", product);
         return res.send(product);
     });
-
-    product.setCategory(productCategory);
-    product.setTag(productTag);
-    product.setBrand(productBrand);
-    product.setFit(productFit);
-    product.setSize(productSize);
-    product.setColor(productColor);
-
 });
 
 //Get products html file

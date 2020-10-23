@@ -16,7 +16,7 @@ router.get("/api/admin/category", async (req, res) =>{
 
 router.post("/api/admin/category/add", async (req, res) =>{
     
-   /* const title = req.body.title;
+    const title = req.body.title;
     const category = await Category.findAll({where: {"title": title}});
 
     if(category.length > 0){
@@ -29,7 +29,7 @@ router.post("/api/admin/category/add", async (req, res) =>{
         }).then(newCategory =>{
             return res.send(newCategory);
         })
-    }*/
+    }
 
 })
 

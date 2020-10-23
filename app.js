@@ -23,6 +23,9 @@ const adminRoute = require("./routes/product");
 app.use(adminRoute);
 const brandRoute = require("./routes/brand");
 app.use(brandRoute);
+/*const colorRoute = require("./routes/color");
+app.use(colorRoute);*/
+
 
 //DB Models instances
 const User = require("./models/user");
@@ -33,19 +36,33 @@ const Brand = require("./models/brand");
 const Category = require("./models/category");
 const Tag = require("./models/tag");
 const WishList = require("./models/wishlist");
+const Fit = require("./models/fit");
+const Size = require("./models/size");
+const Color = require("./models/color");
+
 
 //DB associations
 User.hasOne(WishList);
 User.hasOne(Cart);
 WishList.hasMany(Product);
 Cart.hasMany(CartItem);
-Product.hasOne(Brand);
-Product.hasOne(Category);
-Product.hasMany(Tag);
 WishList.belongsTo(User);
 Cart.belongsTo(User);
 
-DB.sync();
+
+//Product associations
+Brand.hasMany(Product);
+Category.hasMany(Product);
+Product.belongsTo(Category);
+Tag.hasMany(Product);
+Fit.hasMany(Product);
+Color.hasMany(Product);
+Size.hasMany(Product);
+
+
+//Product.belongsTo(Brand);
+
+DB.sync({force: false});
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log('[server] Started server');

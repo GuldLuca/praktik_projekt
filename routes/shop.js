@@ -7,8 +7,6 @@ router.get("/api/products", async (req, res) => {
 
     const products = await Product.findAll();
 
-    console.log(products);
-
     if(products.length > 0){
         return res.send({ response: products });
     } 

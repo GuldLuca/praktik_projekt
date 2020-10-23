@@ -39,7 +39,6 @@ $(document).ready(() => {
 
             option.innerHTML = brands[i].title;
             $("#productBrand").append(option);
-            console.log(option.value);
         };
 
     })
@@ -53,14 +52,14 @@ $(document).ready(() => {
         let categories = data.response;
         let categoriesLength = categories.length;
 
-        $(".productCategory")[0].innerHTML = "";
+        $("#productCategory")[0].innerHTML = "";
 
         for(let i = 0; i < categoriesLength; i++) {
             const option = document.createElement("option");
 
             option.innerHTML = categories[i].title;
 
-            $(".productCategory").append(option);
+            $("#productCategory").append(option);
         };
 
     })
@@ -74,14 +73,14 @@ $(document).ready(() => {
         let tags = data.response;
         let tagsLength = tags.length;
 
-        $(".productTag")[0].innerHTML = "";
+        $("#productTag")[0].innerHTML = "";
 
         for(let i = 0; i < tagsLength; i++) {
             const option = document.createElement("option");
 
             option.innerHTML = tags[i].title;
 
-            $(".productTag").append(option);
+            $("#productTag").append(option);
         };
 
     })
@@ -95,14 +94,14 @@ $(document).ready(() => {
         let colors = data.response;
         let colorsLength = colors.length;
 
-        $(".productColor")[0].innerHTML = "";
+        $("#productColor")[0].innerHTML = "";
 
         for(let i = 0; i < colorsLength; i++) {
             const option = document.createElement("option");
 
             option.innerHTML = colors[i].title;
 
-            $(".productColor").append(option);
+            $("#productColor").append(option);
         };
 
     })
@@ -116,14 +115,14 @@ $(document).ready(() => {
         let sizes = data.response;
         let sizesLength = sizes.length;
 
-        $(".productSize")[0].innerHTML = "";
+        $("#productSize")[0].innerHTML = "";
 
         for(let i = 0; i < sizesLength; i++) {
             const option = document.createElement("option");
 
             option.innerHTML = sizes[i].title;
 
-            $(".productSize").append(option);
+            $("#productSize").append(option);
         };
 
     })
@@ -137,16 +136,14 @@ $(document).ready(() => {
         let fits = data.response;
         let fitsLength = fits.length;
 
-        $(".productFit")[0].innerHTML = "";
+        $("#productFit")[0].innerHTML = "";
 
         for(let i = 0; i < fitsLength; i++) {
             const option = document.createElement("option");
 
             option.innerHTML = fits[i].title;
 
-            $(".productFit").append(option);
-
-            $(".productFit").val("productFit");
+            $("#productFit").append(option);
         };
 
     })
@@ -156,30 +153,40 @@ $(document).ready(() => {
         addProduct();
     });
 
-    function addProduct(){
+    var productTitle = document.getElementById("productTitle");
+    var productPrice = document.getElementById("productPrice");
+    var productDescription = document.getElementById("productDescription");
+    var productQuantity = document.getElementById("productQuantity");
+    var productImageUrl = document.getElementById("productImageUrl");
+    var productBrand = document.getElementById("productBrand");
+    var productCategory = document.getElementById("productCategory");
+    var productColor = document.getElementById("productColor");
+    var productFit = document.getElementById("productFit");
+    var productSize = document.getElementById("productSize");
+    var productTag = document.getElementById("productTag");
 
-        var productBrand = document.getElementById("productBrand");
-        var productCategory = document.getElementsByClassName("productCategory");
-        var productColor = document.getElementsByClassName("productColor");
-        var productFit = document.getElementsByClassName("productFit");
-        var productSize = document.getElementsByClassName("productSize");
-        var productTag = document.getElementsByClassName("productTag");
+    function addProduct(){
     
         var selectedBrand = productBrand.options[productBrand.selectedIndex].text;
-        console.log(selectedBrand);
+
+        var selectedCategory = productCategory.options[productCategory.selectedIndex].text;
+        var selectedColor = productColor.options[productColor.selectedIndex].text;
+        var selectedTag = productTag.options[productTag.selectedIndex].text;
+        var selectedFit = productFit.options[productFit.selectedIndex].text;
+        var selectedSize = productSize.options[productSize.selectedIndex].text;
 
         var formData = {
-            title: $(".productTitle").val(),
+            title: $("#productTitle").val(),
             brand: selectedBrand,
-            description: $(".productDescription").val(),
-            price: $(".productPrice").val(),
-            tag: $(".productTag").val(),
-            color: $(".productColor").val(),
-            fit: $(".productFit").val(),
-            size: $(".productSize").val(),
-            imageUrl: $(".productImageUrl").val(),
-            category: $(".productCateogry").val(),
-            quantity: $(".productQuantity").val()
+            description: $("#productDescription").val(),
+            price: $("#productPrice").val(),
+            tag: selectedTag,
+            color: selectedColor,
+            fit: selectedFit,
+            size: selectedSize,
+            imageUrl: $("#productImageUrl").val(),
+            category:selectedCategory,
+            quantity: $("#productQuantity").val()
         }
 
         $.ajax({
@@ -189,8 +196,6 @@ $(document).ready(() => {
             dataType: "json",
             success: 
                 function(newProduct) {
-                    console.log("FORMDATA.BRAND ", formData.brand);
-                    console.log("SELECTEDBRAND ", selectedBrand);
                     $(".postResult").html("<p>New product [" + newProduct.title + "] added!</p>")
                 },
             error: 

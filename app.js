@@ -51,13 +51,20 @@ Cart.belongsTo(User);
 
 
 //Product associations
-Brand.hasMany(Product);
-Category.hasMany(Product);
+
 Product.belongsTo(Category);
+Product.belongsTo(Tag);
+Product.belongsTo(Color);
+Product.belongsTo(Fit);
+Product.belongsTo(Brand);
+Product.belongsTo(Size);
+
 Tag.hasMany(Product);
 Fit.hasMany(Product);
 Color.hasMany(Product);
 Size.hasMany(Product);
+Brand.hasMany(Product);
+Category.hasMany(Product);
 
 
 //Product.belongsTo(Brand);

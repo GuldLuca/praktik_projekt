@@ -37,13 +37,15 @@ h1, h2, h3, h4, h5{
                     border-color: $main-color;
                     border-width: 1px;
                 }
+                
                 select{
                     font-family: $secondary-font;
                     border-radius: 0;
                     box-shadow: none;
                     border-color: $main-color;
                     border-style: solid;
-
+                    border-width: 1px;
+                    background-color: white;
                 }
                 button{
                     font-family: $secondary-font;

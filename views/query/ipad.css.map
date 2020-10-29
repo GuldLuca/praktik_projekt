@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,mCAAmC;AAEnC,iBAAiB;AAQjB,sCAAsC;AAEtC,4BAA4B;AAO5B,cAAc;AAUd,eAAe;AAQf,cAAc;AAUd,+EAEiC;EAAE,oBAAoB;AAGvD,4GAG8B;EAAE,oBAAoB;AAGpD,2GAG6B;EAAE,oBAAoB;AAGnD,uHAGwC;EAAE,oBAAoB;AAG9D,oJAIwC;EAAE,oBAAoB;AAG9D,mJAIwC;EAAE,oBAAoB;AAG9D,uHAGuC;EAAE,oBAAoB;AAG7D,oJAIyC;EAAE,oBAAoB;AAG/D,mJAIwC;EAAE,oBAAoB;AAG9D,uHAGyC;EAAE,oBAAoB;AAG/D,oJAIyC;EAAE,oBAAoB;AAG/D,mJAIyC;EAAE,oBAAoB;AAE/D;;;;;;;;uBAQuB",
+"sources": ["../scss/query/ipad.scss"],
+"names": [],
+"file": "ipad.css"
+}

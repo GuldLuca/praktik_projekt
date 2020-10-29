@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*480px Styling*/
+@media screen and (max-width: 480px) {
+  .home-page h1, .home-page h2 {
+    font-size: 17px; }
+  .home-page span.manchet {
+    font-size: 7px; }
+  .home-page p {
+    font-size: 7px; }
+  .home-page .section-header img.logo {
+    width: 50px;
+    padding-top: 15px;
+    padding-left: 5px; }
+  .home-page .section-header .manchet p {
+    font-size: 7px;
+    max-width: 220px; }
+  .home-page .section-header .button-pair {
+    padding-top: 35px; }
+    .home-page .section-header .button-pair button {
+      max-width: 70px;
+      font-size: 7px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-width: 1px;
+      margin: 5px; }
+  .home-page .section-header .background-vector {
+    margin-top: -40px; }
+  .home-page .menu {
+    font-size: 7px;
+    padding-bottom: 15px;
+    float: left;
+    padding-left: 50px; }
+    .home-page .menu li a {
+      padding-left: 5px;
+      padding-right: 5px; }
+    .home-page .menu li .home {
+      border-bottom-width: 1px;
+      padding-bottom: 3px; }
+  .home-page ul {
+    padding: 0; }
+  .home-page h1 {
+    padding-top: 50px;
+    font-size: 17px; }
+  .home-page .section-1 h2 {
+    padding-left: 80px;
+    padding-top: 5px; }
+  .home-page .section-1 .manchet {
+    padding-left: 80px;
+    max-width: 350px; }
+  .home-page .section-1 .p-manchet {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    max-width: 370px;
+    padding-left: 80px; }
+    .home-page .section-1 .p-manchet img {
+      height: auto;
+      width: 70px; }
+  .home-page .section-1 .p-bottom {
+    padding-bottom: 90px;
+    max-width: 370px;
+    padding-left: 80px; }
+    .home-page .section-1 .p-bottom img {
+      height: auto;
+      width: 70px; }
+  .home-page .section-1 .our-work-btn {
+    font-size: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 0; }
+  .home-page .section-1 .about-us-btn {
+    font-size: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-width: 1px; }
+  .home-page .section-2 {
+    background-size: contain;
+    background-position: right bottom;
+    margin-top: 0; }
+    .home-page .section-2 h2 {
+      padding-top: 0;
+      padding-bottom: 0; }
+    .home-page .section-2 .tekst-element {
+      height: auto; }
+    .home-page .section-2 .column-1 {
+      padding-left: 80px; }
+    .home-page .section-2 .p-column-2 {
+      padding: 0;
+      max-width: 150px; }
+    .home-page .section-2 .underoverskrift {
+      float: left; }
+    .home-page .section-2 .brødtekst {
+      float: left; }
+  .home-page .section-3 .contact {
+    max-width: 200px; }
+    .home-page .section-3 .contact p {
+      margin: 0; }
+  .home-page .section-3 .fund {
+    max-width: 200px;
+    margin-left: 20px; }
+    .home-page .section-3 .fund button {
+      margin-top: 0;
+      font-size: 7px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px; }
+  .home-page .section-footer img {
+    max-width: 50px;
+    margin-top: 0; }
+  .home-page .section-footer hr {
+    margin-top: 15px; }
+
+  .our-work-page .section-header img.logo {
+    max-width: 40px;
+    margin-top: 15px;
+    margin-left: 5px; }
+  .our-work-page .section-header .menu {
+    font-size: 7px;
+    padding-top: 0;
+    margin-left: 80px; }
+    .our-work-page .section-header .menu li a {
+      padding-right: 5px;
+      padding-left: 10px; }
+    .our-work-page .section-header .menu li .our-work {
+      border-bottom-width: 1px; }
+  .our-work-page .section-header h2 {
+    font-size: 17px;
+    float: left;
+    padding-left: 70px;
+    padding-top: 0; }
+  .our-work-page .section-header .manchet p {
+    font-size: 7px;
+    padding-left: 70px;
+    max-width: 330px; }
+  .our-work-page .section-header .button-pair {
+    padding-left: 70px; }
+    .our-work-page .section-header .button-pair button {
+      max-width: 80px;
+      font-size: 7px;
+      border-width: 1px;
+      border-radius: 2px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-right: 0px; }
+  .our-work-page .section-1 h2 {
+    font-size: 17px;
+    padding-left: 70px;
+    padding-top: 10px; }
+  .our-work-page .section-1 .manchet p {
+    font-size: 7px;
+    padding-left: 70px;
+    max-width: 390px;
+    padding-bottom: 20px; }
+  .our-work-page .section-2 .underoverskrift {
+    font-size: 12px; }
+  .our-work-page .section-2 p {
+    font-size: 7px; }
+  .our-work-page .section-2 .column-1 {
+    padding-left: 50px; }
+    .our-work-page .section-2 .column-1 img {
+      max-width: 32px;
+      margin-left: 30px; } }
+
+/*# sourceMappingURL=query480.css.map */

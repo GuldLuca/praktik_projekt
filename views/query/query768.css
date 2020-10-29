@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*768px Styling*/
+@media screen and (max-width: 768px) {
+  .home-page h1, .home-page h2 {
+    font-size: 20px; }
+  .home-page span.manchet {
+    font-size: 10px; }
+  .home-page p {
+    font-size: 10px; }
+  .home-page .section-header h1 {
+    float: left;
+    padding-top: 30px;
+    padding-left: 280px;
+    margin-top: 0; }
+  .home-page .section-header img.logo {
+    width: 80px;
+    padding-top: 30px;
+    padding-left: 20px; }
+  .home-page .section-header .manchet {
+    padding-bottom: 20px; }
+    .home-page .section-header .manchet p {
+      font-size: 10px;
+      max-width: 320px; }
+  .home-page .section-header .button-pair {
+    padding-top: 10px;
+    padding-left: 230px; }
+    .home-page .section-header .button-pair button {
+      max-width: 100px;
+      font-size: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-width: 1px;
+      float: left; }
+  .home-page .section-header .background-vector {
+    margin-top: -70px; }
+  .home-page .menu {
+    font-size: 10px;
+    padding-bottom: 0;
+    padding-top: 20px;
+    float: left;
+    padding-left: 100px; }
+    .home-page .menu li a {
+      padding-left: 10px;
+      padding-right: 10px; }
+    .home-page .menu li .home {
+      border-bottom-width: 2px;
+      padding-bottom: 5px; }
+  .home-page .section-1 h2 {
+    padding-left: 170px; }
+  .home-page .section-1 .manchet {
+    padding-left: 170px;
+    max-width: 600px; }
+  .home-page .section-1 .p-manchet {
+    padding-top: 90px;
+    padding-bottom: 10px;
+    max-width: 570px;
+    padding-left: 170px; }
+    .home-page .section-1 .p-manchet img {
+      height: auto;
+      max-width: 90px; }
+  .home-page .section-1 .p-bottom {
+    padding-bottom: 90px;
+    max-width: 570px;
+    padding-left: 170px; }
+    .home-page .section-1 .p-bottom img {
+      height: auto;
+      max-width: 90px; }
+  .home-page .section-1 .our-work-btn {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 0; }
+  .home-page .section-1 .about-us-btn {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-width: 1px; }
+  .home-page .section-2 {
+    background-size: contain;
+    background-position: right bottom;
+    margin-top: 0; }
+    .home-page .section-2 h2 {
+      padding-top: 0;
+      padding-bottom: 0; }
+    .home-page .section-2 .tekst-element {
+      height: auto; }
+    .home-page .section-2 .column-1 {
+      padding-left: 170px; }
+    .home-page .section-2 .p-column-2 {
+      padding: 0;
+      max-width: 150px; }
+    .home-page .section-2 .underoverskrift {
+      float: left; }
+    .home-page .section-2 .brødtekst {
+      float: left; }
+  .home-page .section-3 .contact {
+    max-width: 200px;
+    margin-left: 170px; }
+    .home-page .section-3 .contact p {
+      margin: 0; }
+  .home-page .section-3 .fund {
+    max-width: 200px;
+    margin-left: 20px; }
+    .home-page .section-3 .fund button {
+      margin-top: 0;
+      font-size: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px; }
+  .home-page .section-footer img {
+    max-width: 70px;
+    margin-top: 0; }
+  .home-page .section-footer hr {
+    margin-top: 15px; } }
+
+/*# sourceMappingURL=query768.css.map */

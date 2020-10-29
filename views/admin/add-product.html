@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='bootstrap.css' type='text/css' media='all'/>
-	<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
+    <link href='/views/bootstrap.css' type='text/css'/>
+	<link href='/views/style.css' type='text/css'/>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <title> Add Products</title>
@@ -16,7 +16,7 @@
                 <h1>Add Product</h1>
                 <hr>
                 <div class="add-form">
-                    <form action="/api/products/add" method="POST" class="thisForm">
+                    <form action="/api/products/add" method="POST" class="thisForm col-md-12">
                         <input type="text" value="title" name="title" placeholder="Title" id="productTitle">
                         <input type="text" value="price" name="price" placeholder="Price" id="productPrice">
                         <input type="text" value="imageUrl" name="imageUrl" placeholder="Image URL" id="productImageUrl">

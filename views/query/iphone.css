@@ -1,0 +1,593 @@
+@charset "UTF-8";
+/*iPhone Styling*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  /* STYLES GO HERE */ }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  /* STYLES GO HERE */ }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  /* STYLES GO HERE */ }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .home-page h1, .home-page h2 {
+    font-size: 14px; }
+  .home-page span.manchet {
+    font-size: 5px; }
+  .home-page p {
+    font-size: 5px; }
+  .home-page .section-header h1 {
+    float: left;
+    padding-top: 35px;
+    padding-left: 55px;
+    margin-top: 0;
+    padding-bottom: 0px; }
+  .home-page .section-header img.logo {
+    width: 30px;
+    padding-top: 8px;
+    padding-left: 1px; }
+  .home-page .section-header .manchet {
+    padding-bottom: 12px; }
+    .home-page .section-header .manchet p {
+      font-size: 7px;
+      max-width: 220px; }
+  .home-page .section-header .button-pair {
+    padding-left: 50px; }
+    .home-page .section-header .button-pair button {
+      max-width: 70px;
+      font-size: 7px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-width: 1px;
+      float: left; }
+  .home-page .section-header .background-vector {
+    margin-top: -10px; }
+  .home-page .menu {
+    font-size: 5px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-top: 0px; }
+    .home-page .menu li a {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 10px; }
+    .home-page .menu li .home {
+      border-bottom-width: 1px;
+      padding-bottom: 3px; }
+  .home-page .section-1 h2 {
+    padding-left: 40px; }
+  .home-page .section-1 .manchet {
+    padding-left: 40px;
+    max-width: 210px; }
+  .home-page .section-1 .p-manchet {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    max-width: 200px;
+    padding-left: 40px; }
+    .home-page .section-1 .p-manchet img {
+      height: auto;
+      max-width: 30px; }
+  .home-page .section-1 .p-bottom {
+    padding-bottom: 90px;
+    max-width: 200px;
+    padding-left: 40px; }
+    .home-page .section-1 .p-bottom img {
+      height: auto;
+      max-width: 30px; }
+  .home-page .section-1 .our-work-btn {
+    font-size: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    margin-bottom: 0;
+    border-radius: 2px; }
+  .home-page .section-1 .about-us-btn {
+    font-size: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    border-width: 0.5px;
+    border-radius: 2px; }
+  .home-page .section-2 {
+    background-size: contain;
+    background-position: right bottom;
+    margin-top: 0; }
+    .home-page .section-2 h2 {
+      padding-top: 0;
+      padding-bottom: 0; }
+    .home-page .section-2 .manchet {
+      padding-bottom: 15px; }
+    .home-page .section-2 .tekst-element {
+      height: auto; }
+    .home-page .section-2 .column-1 {
+      padding-left: 40px; }
+    .home-page .section-2 .p-column-2 {
+      padding: 0;
+      max-width: 90px; }
+    .home-page .section-2 .underoverskrift {
+      float: left; }
+    .home-page .section-2 .brødtekst {
+      float: left; }
+  .home-page .section-3 .contact {
+    max-width: 100px;
+    margin-left: 40px;
+    margin-top: 30px;
+    max-height: 100px;
+    padding: 10px;
+    margin-bottom: 30px; }
+    .home-page .section-3 .contact p {
+      margin: 0; }
+  .home-page .section-3 .fund {
+    max-width: 100px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-width: 1px;
+    max-height: 100px;
+    padding: 10px;
+    margin-bottom: 30px; }
+    .home-page .section-3 .fund button {
+      margin-top: 0;
+      font-size: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px; }
+  .home-page .section-footer img {
+    max-width: 40px;
+    margin-top: 0; }
+  .home-page .section-footer hr {
+    margin-top: 15px; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  /* STYLES GO HERE */ }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  .home-page h1, .home-page h2 {
+    font-size: 14px; }
+  .home-page span.manchet {
+    font-size: 5px; }
+  .home-page p {
+    font-size: 5px; }
+  .home-page .section-header h1 {
+    float: left;
+    padding-top: 35px;
+    padding-left: 50px;
+    margin-top: 0;
+    padding-bottom: 0px; }
+  .home-page .section-header img.logo {
+    width: 30px;
+    padding-top: 8px;
+    padding-left: 1px; }
+  .home-page .section-header .manchet {
+    padding-bottom: 12px; }
+    .home-page .section-header .manchet p {
+      font-size: 7px;
+      max-width: 220px; }
+  .home-page .section-header .button-pair {
+    padding-left: 50px; }
+    .home-page .section-header .button-pair button {
+      max-width: 70px;
+      font-size: 7px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-width: 1px;
+      float: left; }
+  .home-page .section-header .background-vector {
+    margin-top: -10px; }
+  .home-page .menu {
+    font-size: 5px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-top: 0px; }
+    .home-page .menu li a {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 10px; }
+    .home-page .menu li .home {
+      border-bottom-width: 1px;
+      padding-bottom: 3px; }
+  .home-page .section-1 h2 {
+    padding-left: 40px; }
+  .home-page .section-1 .manchet {
+    padding-left: 40px;
+    max-width: 210px; }
+  .home-page .section-1 .p-manchet {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    max-width: 200px;
+    padding-left: 40px; }
+    .home-page .section-1 .p-manchet img {
+      height: auto;
+      max-width: 30px; }
+  .home-page .section-1 .p-bottom {
+    padding-bottom: 90px;
+    max-width: 200px;
+    padding-left: 40px; }
+    .home-page .section-1 .p-bottom img {
+      height: auto;
+      max-width: 30px; }
+  .home-page .section-1 .our-work-btn {
+    font-size: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    margin-bottom: 0;
+    border-radius: 2px; }
+  .home-page .section-1 .about-us-btn {
+    font-size: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    border-width: 0.5px;
+    border-radius: 2px; }
+  .home-page .section-2 {
+    background-size: contain;
+    background-position: right bottom;
+    margin-top: 0; }
+    .home-page .section-2 h2 {
+      padding-top: 0;
+      padding-bottom: 0; }
+    .home-page .section-2 .manchet {
+      padding-bottom: 15px; }
+    .home-page .section-2 .tekst-element {
+      height: auto; }
+    .home-page .section-2 .column-1 {
+      padding-left: 40px; }
+    .home-page .section-2 .p-column-2 {
+      padding: 0;
+      max-width: 90px; }
+    .home-page .section-2 .underoverskrift {
+      float: left; }
+    .home-page .section-2 .brødtekst {
+      float: left; }
+  .home-page .section-3 .contact {
+    max-width: 100px;
+    margin-left: 40px;
+    margin-top: 30px;
+    max-height: 100px;
+    padding: 10px;
+    margin-bottom: 30px; }
+    .home-page .section-3 .contact p {
+      margin: 0; }
+  .home-page .section-3 .fund {
+    max-width: 100px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-width: 1px;
+    max-height: 100px;
+    padding: 10px;
+    margin-bottom: 30px; }
+    .home-page .section-3 .fund button {
+      margin-top: 0;
+      font-size: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px; }
+  .home-page .section-footer img {
+    max-width: 40px;
+    margin-top: 0; }
+  .home-page .section-footer hr {
+    margin-top: 15px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  .home-page h1, .home-page h2 {
+    font-size: 14px; }
+  .home-page span.manchet {
+    font-size: 5px; }
+  .home-page p {
+    font-size: 5px; }
+  .home-page .section-header h1 {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 50px;
+    padding-bottom: 0px;
+    margin-left: -40px; }
+  .home-page .section-header img.logo {
+    width: 30px;
+    padding-top: 8px;
+    padding-left: 1px; }
+  .home-page .section-header .manchet {
+    padding-bottom: 12px; }
+    .home-page .section-header .manchet p {
+      font-size: 7px;
+      max-width: 220px; }
+  .home-page .section-header .button-pair {
+    padding-left: 150px; }
+    .home-page .section-header .button-pair button {
+      max-width: 70px;
+      font-size: 7px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-width: 1px;
+      float: left; }
+  .home-page .section-header .background-vector {
+    margin-top: -60px; }
+  .home-page .menu {
+    font-size: 5px;
+    padding-bottom: 0;
+    padding-left: 110px;
+    padding-top: 0px;
+    float: left; }
+    .home-page .menu li a {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 10px; }
+    .home-page .menu li .home {
+      border-bottom-width: 1px;
+      padding-bottom: 3px; }
+  .home-page .section-1 h2 {
+    padding-left: 120px; }
+  .home-page .section-1 .manchet {
+    padding-left: 120px;
+    max-width: 400px; }
+  .home-page .section-1 .p-manchet {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    max-width: 350px;
+    padding-left: 120px; }
+    .home-page .section-1 .p-manchet img {
+      height: auto;
+      max-width: 60px; }
+  .home-page .section-1 .p-bottom {
+    padding-bottom: 90px;
+    max-width: 350px;
+    padding-left: 120px; }
+    .home-page .section-1 .p-bottom img {
+      height: auto;
+      max-width: 60px; }
+  .home-page .section-1 .our-work-btn {
+    font-size: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    margin-bottom: 0;
+    border-radius: 2px; }
+  .home-page .section-1 .about-us-btn {
+    font-size: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    border-width: 0.5px;
+    border-radius: 2px; }
+  .home-page .section-2 {
+    background-size: contain;
+    background-position: right bottom;
+    margin-top: 0; }
+    .home-page .section-2 h2 {
+      padding-top: 0;
+      padding-bottom: 0; }
+    .home-page .section-2 .manchet {
+      padding-bottom: 15px; }
+    .home-page .section-2 .tekst-element {
+      height: auto; }
+    .home-page .section-2 .column-1 {
+      padding-left: 120px; }
+    .home-page .section-2 .p-column-2 {
+      padding: 0;
+      max-width: 150px; }
+    .home-page .section-2 .underoverskrift {
+      float: left; }
+    .home-page .section-2 .brødtekst {
+      float: left; }
+  .home-page .section-3 .contact {
+    max-width: 130px;
+    margin-top: 30px;
+    max-height: 100px;
+    padding: 10px;
+    margin-left: 120px;
+    margin-bottom: 30px; }
+    .home-page .section-3 .contact p {
+      margin: 0; }
+  .home-page .section-3 .fund {
+    max-width: 130px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-width: 1px;
+    max-height: 100px;
+    padding: 10px;
+    margin-bottom: 30px; }
+    .home-page .section-3 .fund button {
+      margin-top: 0;
+      font-size: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px; }
+  .home-page .section-footer img {
+    max-width: 50px;
+    margin-top: 0; }
+  .home-page .section-footer hr {
+    margin-top: 15px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .home-page h1, .home-page h2 {
+    font-size: 14px; }
+  .home-page span.manchet {
+    font-size: 5px; }
+  .home-page p {
+    font-size: 5px; }
+  .home-page .section-header h1 {
+    float: left;
+    padding-top: 35px;
+    padding-left: 75px;
+    margin-top: 0;
+    padding-bottom: 0px; }
+  .home-page .section-header img.logo {
+    width: 30px;
+    padding-top: 8px;
+    padding-left: 1px; }
+  .home-page .section-header .manchet {
+    padding-bottom: 12px; }
+    .home-page .section-header .manchet p {
+      font-size: 7px;
+      max-width: 220px; }
+  .home-page .section-header .button-pair {
+    padding-left: 50px; }
+    .home-page .section-header .button-pair button {
+      max-width: 70px;
+      font-size: 7px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 2px;
+      padding-right: 2px;
+      border-width: 1px;
+      float: left; }
+  .home-page .section-header .background-vector {
+    margin-top: -10px; }
+  .home-page .menu {
+    font-size: 5px;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-top: 0px; }
+    .home-page .menu li a {
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 10px; }
+    .home-page .menu li .home {
+      border-bottom-width: 1px;
+      padding-bottom: 3px; }
+  .home-page .section-1 h2 {
+    padding-left: 40px; }
+  .home-page .section-1 .manchet {
+    padding-left: 40px;
+    max-width: 210px; }
+  .home-page .section-1 .p-manchet {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    max-width: 200px;
+    padding-left: 40px; }
+    .home-page .section-1 .p-manchet img {
+      height: auto;
+      max-width: 30px; }
+  .home-page .section-1 .p-bottom {
+    padding-bottom: 90px;
+    max-width: 200px;
+    padding-left: 40px; }
+    .home-page .section-1 .p-bottom img {
+      height: auto;
+      max-width: 30px; }
+  .home-page .section-1 .our-work-btn {
+    font-size: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    margin-bottom: 0;
+    border-radius: 2px; }
+  .home-page .section-1 .about-us-btn {
+    font-size: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    border-width: 0.5px;
+    border-radius: 2px; }
+  .home-page .section-2 {
+    background-size: contain;
+    background-position: right bottom;
+    margin-top: 0; }
+    .home-page .section-2 h2 {
+      padding-top: 0;
+      padding-bottom: 0; }
+    .home-page .section-2 .manchet {
+      padding-bottom: 15px; }
+    .home-page .section-2 .tekst-element {
+      height: auto; }
+    .home-page .section-2 .column-1 {
+      padding-left: 40px; }
+    .home-page .section-2 .p-column-2 {
+      padding: 0;
+      max-width: 90px; }
+    .home-page .section-2 .underoverskrift {
+      float: left; }
+    .home-page .section-2 .brødtekst {
+      float: left; }
+  .home-page .section-3 .contact {
+    max-width: 100px;
+    margin-left: 40px;
+    margin-top: 30px;
+    max-height: 100px;
+    padding: 10px;
+    margin-bottom: 30px; }
+    .home-page .section-3 .contact p {
+      margin: 0; }
+  .home-page .section-3 .fund {
+    max-width: 100px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-width: 1px;
+    max-height: 100px;
+    padding: 10px;
+    margin-bottom: 30px; }
+    .home-page .section-3 .fund button {
+      margin-top: 0;
+      font-size: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px; }
+  .home-page .section-footer img {
+    max-width: 40px;
+    margin-top: 0; }
+  .home-page .section-footer hr {
+    margin-top: 15px; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  /* STYLES GO HERE */ }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  /* STYLES GO HERE */ }
+/*iPhone 5 Resolution
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 568px (CSS Pixels)
+
+Screen Width = 640px (Actual Pixels)
+Screen Height = 1136px (Actual Pixels)
+
+Device-pixel-ratio: 2*/
+/*iPhone 4/4S Resolution
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 480px (CSS Pixels)
+
+Screen Width = 640px (Actual Pixels)
+Screen Height = 960px (Actual Pixels)
+
+Device-pixel-ratio: 2*/
+/*iPhone 2G/3G/3GS Resolution
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 480px (CSS Pixels)
+
+Screen Width = 320px (Actual Pixels)
+Screen Height = 480px (Actual Pixels)
+
+Device-pixel-ratio: 1*/
+/*iPhone X Resolution
+
+Screen Width = 375px (CSS Pixels)
+Screen Height = 812px (CSS Pixels)
+
+Screen Width = 1125 (Actual Pixels)
+Screen Height = 2436 (Actual Pixels)
+
+Device-pixel-ratio: 3*/
+
+/*# sourceMappingURL=iphone.css.map */

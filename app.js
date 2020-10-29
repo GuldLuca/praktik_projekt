@@ -23,8 +23,6 @@ const adminRoute = require("./routes/product");
 app.use(adminRoute);
 const brandRoute = require("./routes/brand");
 app.use(brandRoute);
-/*const colorRoute = require("./routes/color");
-app.use(colorRoute);*/
 
 
 //DB Models instances
@@ -66,10 +64,7 @@ Size.hasMany(Product);
 Brand.hasMany(Product);
 Category.hasMany(Product);
 
-
-//Product.belongsTo(Brand);
-
-DB.sync({force: false});
+DB.sync();
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log('[server] Started server');

@@ -1,0 +1,113 @@
+$main-color: #141a24;
+$headline-font: "Bookman";
+$secondary-font: "Garamond";
+$secondary-color: #16cdad;
+
+.container{
+    max-width: 940px;
+}
+
+.p0{
+    padding: 0 !important;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: $headline-font;
+    font-weight: bold;
+}
+
+.add-product-page{
+    .section-1{
+        h1{
+            padding-top: 50px;
+        }
+
+        hr{
+            border: 1px solid black;
+        }
+
+        .add-form{
+            padding-top: 50px;
+            .thisForm{
+                input{
+                    font-family: $secondary-font;
+                    border-radius: 0;
+                    box-shadow: none;
+                    border-style: solid;
+                    border-color: $main-color;
+                    border-width: 1px;
+                }
+                select{
+                    font-family: $secondary-font;
+                    border-radius: 0;
+                    box-shadow: none;
+                    border-color: $main-color;
+                    border-style: solid;
+
+                }
+                button{
+                    font-family: $secondary-font;
+                }
+
+                .first-block{
+                    padding: 50px;
+                    background-color: #EBECF0;
+                    width: 49%;
+                    input{
+                        width: 335px;
+                        margin: 10px;
+                    }
+
+                    #productDescription{
+                        height: 200px;
+                    }
+                }
+
+                .second-block{
+                    float: right;
+                    padding: 50px;
+                    background-color: #EBECF0;
+                    width: 49%;
+                    height: 200px;
+                    select{
+                        width: 100px;
+                    }
+                }
+
+                .third-block{
+                    margin-top: 10px;
+                    float: right;
+                    padding: 50px;
+                    background-color: #EBECF0;
+                    width: 49%;
+                    height: 200px;
+                    select{
+                        width: 150px;
+                    }
+                }
+
+                .fourth-block{
+                    background-color: #EBECF0;
+                    width: 100%;
+                    margin-top: 10px;
+                    padding: 30px;
+                    input{
+                        width: 30%;
+                        margin-right: 35px;
+                    }
+                    select{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*@import 'query/query1366';
+//@import 'query/query1024';
+@import 'query/query768';
+@import 'query/query480';
+@import 'query/ipad';
+@import 'query/iphone';*/

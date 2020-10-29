@@ -1,0 +1,76 @@
+.container {
+  max-width: 940px; }
+
+.p0 {
+  padding: 0 !important; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Bookman";
+  font-weight: bold; }
+
+.add-product-page .section-1 h1 {
+  padding-top: 50px; }
+.add-product-page .section-1 hr {
+  border: 1px solid black; }
+.add-product-page .section-1 .add-form {
+  padding-top: 50px; }
+  .add-product-page .section-1 .add-form .thisForm input {
+    font-family: "Garamond";
+    border-radius: 0;
+    box-shadow: none;
+    border-style: solid;
+    border-color: #141a24;
+    border-width: 1px; }
+  .add-product-page .section-1 .add-form .thisForm select {
+    font-family: "Garamond";
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #141a24;
+    border-style: solid; }
+  .add-product-page .section-1 .add-form .thisForm button {
+    font-family: "Garamond"; }
+  .add-product-page .section-1 .add-form .thisForm .first-block {
+    padding: 50px;
+    background-color: #EBECF0;
+    width: 49%; }
+    .add-product-page .section-1 .add-form .thisForm .first-block input {
+      width: 335px;
+      margin: 10px; }
+    .add-product-page .section-1 .add-form .thisForm .first-block #productDescription {
+      height: 200px; }
+  .add-product-page .section-1 .add-form .thisForm .second-block {
+    float: right;
+    padding: 50px;
+    background-color: #EBECF0;
+    width: 49%;
+    height: 200px; }
+    .add-product-page .section-1 .add-form .thisForm .second-block select {
+      width: 100px; }
+  .add-product-page .section-1 .add-form .thisForm .third-block {
+    margin-top: 10px;
+    float: right;
+    padding: 50px;
+    background-color: #EBECF0;
+    width: 49%;
+    height: 200px; }
+    .add-product-page .section-1 .add-form .thisForm .third-block select {
+      width: 150px; }
+  .add-product-page .section-1 .add-form .thisForm .fourth-block {
+    background-color: #EBECF0;
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px; }
+    .add-product-page .section-1 .add-form .thisForm .fourth-block input {
+      width: 30%;
+      margin-right: 35px; }
+    .add-product-page .section-1 .add-form .thisForm .fourth-block select {
+      width: 30%; }
+
+/*@import 'query/query1366';
+//@import 'query/query1024';
+@import 'query/query768';
+@import 'query/query480';
+@import 'query/ipad';
+@import 'query/iphone';*/
+
+/*# sourceMappingURL=style.css.map */

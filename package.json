@@ -8,7 +8,6 @@
     "bootstrap": "^4.5.3",
     "braintree": "^3.0.0",
     "express": "^4.17.1",
-    "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "node": "^14.11.0",
     "nodemon": "^2.0.4",
@@ -16,17 +15,8 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
-    "clean-css-cli": "^4.3.0",
     "node-sass": "^4.14.1",
-    "postcss-cli": "^8.1.0",
-    "sequelize-cli": "^6.2.0",
-    "stylelint": "^13.7.2",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0",
-    "watch": "^1.0.2"
+    "sequelize-cli": "^6.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

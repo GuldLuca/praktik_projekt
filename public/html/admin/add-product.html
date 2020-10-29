@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/styles/bootstrap.css' type='text/css'/>
+	<link rel="stylesheet" href='/styles/style.css' type='text/css'/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <title> Add Products</title>
+</head>
+<body class="add-product-page">
+    <div class="section-1">
+        <div class="container-fluid">
+            <div class="container">
+                <h1>Add Product</h1>
+                <hr>
+                <div class="add-form ">
+                    <form action="/api/products/add" method="POST" class="thisForm col-md-12 p0">
+                        <div class="first-block col-md-6">
+                            <input type="text" name="title" placeholder="Title" id="productTitle">
+                            <input type="text" name="imageUrl" placeholder="Image URL" id="productImageUrl">
+                            <input type="text" name="description" placeholder="Description" id="productDescription">
+                        </div>
+                        <div class="second-block col-md-6">
+                            <select name="brand" id="productBrand">
+                                <option value="none">Choose</option>
+                            </select>
+                            <select name="category" id="productCategory">
+                                <option value="none">Choose</option>
+    
+                            </select>
+                            <select name="color" id="productColor">
+                                <option value="none">Choose</option>
+    
+                            </select>
+                        </div>
+                        <div class="third-block col-md-6">
+                            <select name="size" id="productSize">
+                                <option value="none">Choose</option>
+    
+                            </select>
+                            <select name="fit" id="productFit">
+                                <option value="none">Choose</option>
+    
+                            </select>
+                        </div>
+                        <div class="fourth-block col-md-12">
+                            <input type="number" name="quantity" placeholder="Quantity" id="productQuantity">
+                            <input type="text" name="price" placeholder="Price" id="productPrice">
+                            <select name="tag" id="productTag">
+                                <option value="none">Choose</option>
+    
+                            </select>
+                        </div>
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/product.js"></script>
+</body>
+</html>

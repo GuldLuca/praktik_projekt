@@ -34,7 +34,7 @@ router.post("/api/admin/category/add", async (req, res) =>{
 })
 
 router.get("/admin/category", (req, res) =>{
-    res.sendFile("/views/admin/category.html", {root: "/home/luca/Skole/Praktik/webshop"});
+    res.sendFile("/public/html/admin/category.html", {root: "/home/luca/Skole/Praktik/webshop"});
 })
 
 module.exports = router;

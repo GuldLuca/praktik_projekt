@@ -143,13 +143,13 @@ router.post("/api/admin/products/add", async (req, res) => {
 
 //Get products html file
 router.get("/admin/products", (req, res) =>{
-    res.sendFile("/views/admin/products.html", {root: "/home/luca/Skole/Praktik/webshop"});
+    res.sendFile("/public/html/admin/products.html", {root: "/home/luca/Skole/Praktik/webshop"});
 })
 
 
 //Get add products html file
 router.get("/admin/products/add", (req, res) =>{
-    res.sendFile("/views/admin/add-product.html", {root: "/home/luca/Skole/Praktik/webshop"});
+    res.sendFile("/public/html/admin/add-product.html", {root: "/home/luca/Skole/Praktik/webshop"});
 })
 
 module.exports = router;

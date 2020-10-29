@@ -17,7 +17,7 @@ router.get("/api/products", async (req, res) => {
 
 //Get products html file
 router.get("/products", (req, res) =>{
-    res.sendFile("/views/shop/products.html", {root: "/home/luca/Skole/Praktik/webshop"});
+    res.sendFile("/public/html/shop/products.html", {root: "/home/luca/Skole/Praktik/webshop"});
 })
 
 module.exports = router;

@@ -35,7 +35,7 @@ router.post("/api/admin/brand/add", async (req, res) =>{
 })
 
 router.get("/admin/brand", (req, res) =>{
-    res.sendFile("/views/admin/brand.html", {root: "/home/luca/Skole/Praktik/webshop"});
+    res.sendFile("/public/html/admin/brand.html", {root: "/home/luca/Skole/Praktik/webshop"});
 })
 
 module.exports = router;

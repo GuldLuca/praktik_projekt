@@ -16,7 +16,7 @@ var gateway = new braintree.BraintreeGateway({
 router.get("/", function(req, res) {
 
     gateway.clientToken.generate({}, function(err, response){
-        res.sendFile("/views/index.html", {root: "/home/luca/Skole/Praktik/webshop"});
+        res.sendFile("/public/html/index.html", {root: "/home/luca/Skole/Praktik/webshop"});
     }
     );
 });
@@ -37,7 +37,7 @@ router.post('/', function(req, res, next) {
     }
   }, function(error, result) {
       if (result) {
-          res.sendFile(__dirname + "/views/index.html");
+          res.sendFile(__dirname + "/public/html/index.html");
       } else {
         res.status(500).send(error);
       }
